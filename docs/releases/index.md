@@ -10,6 +10,17 @@ Each release receives a DOI via Zenodo.
 
 ## Past releases
 
+### v2026.08 (2026-08-31)
+
+Second dated snapshot.
+Ten practices, all at `draft` status, with no endorsements yet.
+Deposited after the summer break; it captures the record as of 18 August 2026.
+BP-04 gained resource and spend caps; BP-01 gained a costed example of the wrong method choice.
+The library grew to nine distilled sources and 54 reference works, and the failures log to five entries.
+Source lists on the practice pages are now generated from each page's frontmatter, and this snapshot carries the first contributions from outside the editor group.
+
+[GitHub release](https://github.com/slolab/aiforscience.eu/releases/tag/v2026.08)
+
 ### v2026.07 (2026-07-30)
 
 First dated snapshot.
