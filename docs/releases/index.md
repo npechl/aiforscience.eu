@@ -19,7 +19,7 @@ BP-04 gained resource and spend caps; BP-01 gained a costed example of the wrong
 The library grew to nine distilled sources and 54 reference works, and the failures log to five entries.
 Source lists on the practice pages are now generated from each page's frontmatter, and this snapshot carries the first contributions from outside the editor group.
 
-[GitHub release](https://github.com/slolab/aiforscience.eu/releases/tag/v2026.08)
+DOI: [10.5281/zenodo.22645685](https://doi.org/10.5281/zenodo.22645685) · [GitHub release](https://github.com/slolab/aiforscience.eu/releases/tag/v2026.08)
 
 ### v2026.07 (2026-07-30)
 
@@ -33,7 +33,7 @@ DOI: [10.5281/zenodo.21709876](https://doi.org/10.5281/zenodo.21709876) · [GitH
 
 Cite the record by release, not by URL alone:
 
-> AI for Science contributors. *Best Practices for Agentic AI in Science*, release 2026.07. https://aiforscience.eu, DOI: 10.5281/zenodo.21709876.
+> AI for Science contributors. *Best Practices for Agentic AI in Science*, release 2026.08. https://aiforscience.eu, DOI: 10.5281/zenodo.22645685.
 
 Each release has its own version DOI.
 The concept DOI [10.5281/zenodo.21709875](https://doi.org/10.5281/zenodo.21709875) is stable across all releases and resolves to the latest snapshot.
