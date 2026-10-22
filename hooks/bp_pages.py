@@ -47,7 +47,7 @@ def _render_sources(sources):
     lines = ["## Sources", ""]
     for source in sources:
         ref = _load_library_meta(Path("./docs/" + source.get('ref')))
-        bullet = f'- [{ref.get('title')}](../{source.get('ref')}).'
+        bullet = f"- [{ref.get('title')}](../{source.get('ref')})."
         note = source.get("note")
         lines.append(f"{bullet} {note}" if note else bullet)
     return "\n".join(lines)
