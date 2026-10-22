@@ -44,8 +44,7 @@ last_reviewed: YYYY-MM-DD
 endorsed_by:
   - <org or task force>
 sources:
-  - title: <source title>
-    ref: <path under docs/, e.g. library/ec-expert-forum-2026.md, or URL>
+  - ref: <path under library/, e.g. library/ec-expert-forum-2026.md, or URL>
     locator: "<where in the source, e.g. §5.3, p. 28>"
     note: "<what this source contributes to this practice, plus any caveat about its weight or status>"
 layer: Operational | Method | Ecosystem   # internal only for now: not shown on pages, not in tags, not explained
