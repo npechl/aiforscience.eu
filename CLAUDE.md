@@ -45,6 +45,7 @@ endorsed_by:
   - <org or task force>
 sources:
   - ref: <path under library/, e.g. library/ec-expert-forum-2026.md, or URL>
+    title: "<link text; only for a URL ref, which has no library page to read it from>"
     locator: "<where in the source, e.g. §5.3, p. 28>"
     note: "<what this source contributes to this practice, plus any caveat about its weight or status>"
 layer: Operational | Method | Ecosystem   # internal only for now: not shown on pages, not in tags, not explained

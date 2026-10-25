@@ -46,8 +46,14 @@ def _load_library_meta(path):
 def _render_sources(sources):
     lines = ["## Sources", ""]
     for source in sources:
-        ref = _load_library_meta(Path("./docs/" + source.get('ref')))
-        bullet = f"- [{ref.get('title')}](../{source.get('ref')})."
+        target = source.get("ref")
+        if target.startswith(("http://", "https://")):
+            # External source: no library page to read, so the title comes
+            # from the entry itself, falling back to the bare URL.
+            bullet = f"- [{source.get('title') or target}]({target})."
+        else:
+            ref = _load_library_meta(Path("./docs/" + target))
+            bullet = f"- [{ref.get('title')}](../{target})."
         note = source.get("note")
         lines.append(f"{bullet} {note}" if note else bullet)
     return "\n".join(lines)
