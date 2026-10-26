@@ -73,7 +73,10 @@ Body sections, in this order, all present:
    the frontmatter only; never write the bullets by hand. Each entry renders as
    one bullet: the linked title, then its `note`. The `locator` is a record of
    where in the source the support sits; it is not rendered, so a note that
-   needs to name a section states it itself.
+   needs to name a section states it itself. The link text is the library
+   page's `title`, which names the whole work. So when the support sits in one
+   article, part, or companion document of a regulation, standard, or
+   framework (for example "Article 14", "AI 600-1"), the note names it.
 6. `## Change history` — dated bullets, newest first. Git log is the full record.
 
 Status, endorsements, and the last-reviewed date come from the frontmatter and
