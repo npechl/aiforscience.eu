@@ -17,8 +17,8 @@ sources:
     locator: "oversight must be effective; automation bias named"
     note: "Article 14 requires oversight to be effective, and names automation bias as a hazard the overseer must be able to counter."
   - ref: library/ref-nist-ai-rmf.md
-    locator: "oversight calibrated to risk"
-    note: "Sets oversight calibrated to the risk level."
+    locator: "AI 600-1: oversight calibrated to risk"
+    note: "The Generative AI Profile (AI 600-1) sets oversight calibrated to the risk level."
   - ref: library/ref-elish-2019.md
     locator: "the nominal human absorbs blame for uncontrollable systems"
     note: "Shows the nominal human in the loop can absorb blame for a system they cannot realistically control."

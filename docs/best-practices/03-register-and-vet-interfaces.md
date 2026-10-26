@@ -29,8 +29,8 @@ sources:
     locator: "listing of self-reported data; no security review"
     note: "Evidence that the official registry lists self-reported data and does not vet, so listing and vetting must be kept distinct."
   - ref: library/ref-eu-ai-act.md
-    locator: "substantial modification; deployer becomes provider"
-    note: "Substantial modification can move provider responsibility to whoever changed the system."
+    locator: "Art. 25(1)(b): substantial modification; deployer becomes provider"
+    note: "Under Article 25, substantial modification can move provider responsibility to whoever changed the system."
   - ref: library/ref-ietf-aipref.md
     locator: "machine-readable access preferences"
     note: "Emerging machine-readable way to declare access preferences to automated clients."

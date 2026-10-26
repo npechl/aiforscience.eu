@@ -14,11 +14,11 @@ sources:
     locator: "§4.2.3, hooks 1 and 3"
     note: "§4.2.3 (independent audit, evaluation and verification capacity). Consistent with, grounding only."
   - ref: library/ref-nist-ai-rmf.md
-    locator: "GOVERN function; system inventory; stop-build authority"
-    note: "GOVERN roles and accountability, a documented system inventory, and stop-build authority."
+    locator: "AI 100-1 GOVERN function; AI 600-1 system inventory and stop-build authority"
+    note: "GOVERN roles and accountability (AI 100-1), a documented system inventory, and stop-build authority (Generative AI Profile, AI 600-1)."
   - ref: library/ref-eu-ai-act.md
-    locator: "human oversight; deployer duties"
-    note: "Named natural persons for oversight and deployer duties."
+    locator: "Art. 14 human oversight; Art. 26 deployer duties"
+    note: "Articles 14 (human oversight) and 26 (deployer duties) assign oversight to named natural persons."
   - ref: library/ai-omnibus-2026.md
     locator: "Art 5(1a)(a)(ii); Recital 12 (foreseeable-misuse standard)"
     note: "Art 5(1a)(a)(ii). A provider is responsible where a prohibited output is a reasonably foreseeable and reproducible outcome absent adequate technical safeguards, which places the limit in the system rather than in policy (bp4-a1)."
