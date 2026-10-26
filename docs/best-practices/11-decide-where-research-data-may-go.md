@@ -76,15 +76,15 @@ comments: true
 
 <div class="afs-practice" markdown>
 
-- Sending data to an AI service hands it to the provider under that service's terms.
+- Sending data to an AI service hands it to the provider under their terms of service.
   { #bp11-a1 }
-- The account tier and the contract decide whether inputs train a model, how long they are kept, and who else can use them.
+- These terms of service govern whether inputs train a model, how long they are kept, and who else can use them.
   { #bp11-a2 }
-- Personal, confidential, or controlled-access data must only be provided to a service under a contract that fits its legal regime, or must stay in an environment the institution governs.
+- Personal, confidential, or controlled-access data must only be provided to a service under a contract that fits the legal regime of the data, or must stay in an environment governed by the party responsible for the data.
   { #bp11-a3 }
-- An [agent](../glossary.md#agent) on a hosted model sends everything it reads to the model's provider, so reading a file already discloses it.
+- An [agent](../glossary.md#agent) using an externally hosted model sends everything it reads to the model's provider, so reading a file already discloses it.
   { #bp11-a4 }
-- For an agent, the services it may send data to are a limit set in the system.
+- For an agent, the services it may send data to must be limited by its technical environment; instructions alone are insufficient.
   { #bp11-a5 }
 
 </div>
@@ -93,9 +93,8 @@ comments: true
 
     Sending personal data to an AI service is itself processing under data protection law: it needs a legal basis, a processor contract, and, for a provider outside the EU, a transfer basis.
     This holds even when the provider does not train on the data.
-    A personal or consumer account meets none of these conditions, so do not use one for personal, confidential, or controlled-access data.
-    Use the account or deployment your institution has contracted, check how long inputs are kept and whether they are used for training, and keep such data local when no contracted route exists.
-    Anything an agent on a hosted model reads goes to the provider, so keep secrets and protected data out of the directories it can read.
+    For personal, confidential, or controlled-access data use the account or deployment your institution has contracted, check how long inputs are kept and whether they are used for training, and keep such data local when no contracted route exists.
+    Anything an agent using an externally hosted model reads goes to the provider, so keep secrets and protected data out of the directories it can read, preferrably via sandboxing your agents.
 
 === "For providers"
 
@@ -105,27 +104,28 @@ comments: true
 
 === "For governance"
 
-    Contract the AI services staff use (processor agreement, training excluded, transfer basis) and provide institutional accounts, so no one needs a consumer account for work.
+    Contract the AI services used by your staff; ensure processor agreement, exclude use of data for training, and establish the transfer basis; provide institutional accounts, and ensure no one uses a consumer account for work.
     State which data classes may reach which tier.
     Hosting in the EU at a provider under US jurisdiction does not by itself remove the reach of US legal process; decide what that means for each data class.
 
 ## Reasons
 
-Typing data into an AI service, or letting an agent send it, hands the data to the provider.
+Typing data into an AI service, or letting an agent send it, hands the data to the service provider.
 What happens next is set by the account tier and the contract: whether the input trains a model, how long it is kept, and whether a court order can override a promise to delete it.
-One provider's consumer accounts train on inputs by default and keep them for five years; its commercial tier excludes training and keeps them for 30 days.
-A US court ordered another provider to keep consumer and standard-API chats that users had deleted; zero-retention customers were unaffected.
+For instance, consumer accounts of one provider train on inputs by default and keep them for five years; its commercial tier excludes training and keeps them for 30 days.
+Service providers fall under their own jurisdictions: a US court ordered another provider to keep consumer and standard-API chats that users had deleted; zero-retention customers were unaffected.
 
 For personal data, the act of sending is already processing under data protection law.
 It needs a lawful basis, a processor contract, appropriate security, and a transfer basis when the provider is outside the EU.
-These apply even if the provider never trains on the data.
-A regulator has treated staff entering patient data into a consumer chatbot as a data breach, although the practice had written rules against it.
+These regulations apply even if the provider never trains on the data.
+In one case, a regulator had written rules against entering patient data into a consumer chatbot, and the incident when one of their staff still used the chatbot was treated as a data breach.
 The EDPB and the data protection authorities of Germany, France, and Spain place the check on the organisation that deploys the service.
 The EDPS found the European Commission's own use of a cloud office suite under the provider's standard terms unlawful until the contract was renegotiated.
 
 This practice does not restate data protection law or research ethics.
-It covers what AI changes: the decision is made at the moment of sending, often by one person with a consumer account at hand, and an agent can make it with no one typing.
-For an agent on a hosted model, sending needs no upload: every file it opens, every command output, and every tool result goes into the model's context and to the provider.
+It covers what AI changes: the decision to disclose data moves to the moment of use, where a single person makes it, or, if the task is performed by an agent, no one does. Then data processing depends on the terms of service of the provider and their jurisdiction.
+
+For an agent on an externally hosted model, sending needs no upload: every file it opens, every command output, and every tool result goes into the model's context and to the provider.
 Data held under withdrawable consent must also never be committed to third-party training; that irreversible case is screened under [BP10](10-screen-dual-use-high-consequence.md).
 How an agent's limits are enforced in the system, and who answers for them, is [BP04](04-govern-autonomy-and-accountability.md).
 
