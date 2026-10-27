@@ -4,7 +4,7 @@ nav_title: "Decide where research data may be sent"
 practice_id: BP-11
 status: draft
 first_added: 2026-10-08
-last_reviewed: 2026-10-08
+last_reviewed: 2026-10-27
 endorsed_by: []
 sources:
   - title: "EU General Data Protection Regulation (Regulation (EU) 2016/679)"
@@ -78,7 +78,7 @@ comments: true
 
 - Sending data to an AI service hands it to the provider under their terms of service.
   { #bp11-a1 }
-- These terms of service govern whether inputs train a model, how long they are kept, and who else can use them.
+- The account tier and its terms decide whether inputs train a model, how long they are kept, and who else can use them.
   { #bp11-a2 }
 - Personal, confidential, or controlled-access data must only be provided to a service under a contract that fits the legal regime of the data, or must stay in an environment governed by the party responsible for the data.
   { #bp11-a3 }
@@ -93,8 +93,8 @@ comments: true
 
     Sending personal data to an AI service is itself processing under data protection law: it needs a legal basis, a processor contract, and, for a provider outside the EU, a transfer basis.
     This holds even when the provider does not train on the data.
-    For personal, confidential, or controlled-access data use the account or deployment your institution has contracted, check how long inputs are kept and whether they are used for training, and keep such data local when no contracted route exists.
-    Anything an agent using an externally hosted model reads goes to the provider, so keep secrets and protected data out of the directories it can read, preferrably via sandboxing your agents.
+    For personal, confidential, or controlled-access data, use the account or deployment your institution has contracted, check how long inputs are kept and whether they are used for training, and keep such data local when no contracted route exists.
+    Anything an agent using an externally hosted model reads goes to the provider, so keep secrets and protected data out of the directories it can read, preferably by sandboxing your agents.
 
 === "For providers"
 
@@ -104,7 +104,7 @@ comments: true
 
 === "For governance"
 
-    Contract the AI services used by your staff; ensure processor agreement, exclude use of data for training, and establish the transfer basis; provide institutional accounts, and ensure no one uses a consumer account for work.
+    Contract the AI services used by your staff; ensure a processor agreement, exclude use of data for training, and establish the transfer basis; provide institutional accounts, and ensure no one uses a consumer account for work.
     State which data classes may reach which tier.
     Hosting in the EU at a provider under US jurisdiction does not by itself remove the reach of US legal process; decide what that means for each data class.
 
@@ -117,13 +117,14 @@ Service providers fall under their own jurisdictions: a US court ordered another
 
 For personal data, the act of sending is already processing under data protection law.
 It needs a lawful basis, a processor contract, appropriate security, and a transfer basis when the provider is outside the EU.
-These regulations apply even if the provider never trains on the data.
-In one case, a regulator had written rules against entering patient data into a consumer chatbot, and the incident when one of their staff still used the chatbot was treated as a data breach.
+These requirements apply even if the provider never trains on the data.
+A regulator has treated staff entering patient data into a consumer chatbot as a data breach, although the practice had written rules against it.
 The EDPB and the data protection authorities of Germany, France, and Spain place the check on the organisation that deploys the service.
 The EDPS found the European Commission's own use of a cloud office suite under the provider's standard terms unlawful until the contract was renegotiated.
 
 This practice does not restate data protection law or research ethics.
-It covers what AI changes: the decision to disclose data moves to the moment of use, where a single person makes it, or, if the task is performed by an agent, no one does. Then data processing depends on the terms of service of the provider and their jurisdiction.
+It covers what AI changes: the decision to disclose data moves to the moment of use, where a single person makes it, or, if an agent performs the task, no one does.
+What happens to the data then depends on the provider's terms and jurisdiction.
 
 For an agent on an externally hosted model, sending needs no upload: every file it opens, every command output, and every tool result goes into the model's context and to the provider.
 Data held under withdrawable consent must also never be committed to third-party training; that irreversible case is screened under [BP10](10-screen-dual-use-high-consequence.md).
