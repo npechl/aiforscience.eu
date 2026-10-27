@@ -37,8 +37,7 @@ sources:
   - ref: library/ref-copilot-word-ai-worm-2026.md
     locator: "Implications; Impact"
     note: "Recommends that generated documents preserve provenance for source material and model-performed edits in metadata; in the proof of concept, approved assistant edits left no visible trace, which is what made the manipulation untraceable afterwards (bp7-a2). A proof of concept in a commercial productivity suite, not an incident observed in science; grounding only."
-  - title: "Living guidelines on the responsible use of generative AI in research (European Commission and ERA Forum, 2026)"
-    ref: library/era-living-guidelines-genai-2026.md
+  - ref: library/era-living-guidelines-genai-2026.md
     locator: "Recommendations for researchers 1 and 2, pp. 7-8"
     note: "Researchers stay accountable for AI-assisted content, AI is not an author, and substantial use is noted in the methods section (bp7-a2). Non-binding."
 layer: Method

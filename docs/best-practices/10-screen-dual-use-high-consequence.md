@@ -40,24 +40,19 @@ sources:
   - ref: library/gagneur-rare-disease-patient-data-2026.md
     locator: "no perpetual licence; analysis is not training permission"
     note: "Adjacent support: analysis permission is not training permission, and no perpetual licence should be taken over patient-level data. Individual commentary; it does not itself make the revocable-consent argument."
-  - title: "Living guidelines on the responsible use of generative AI in research (European Commission and ERA Forum, 2026)"
-    ref: library/era-living-guidelines-genai-2026.md
+  - ref: library/era-living-guidelines-genai-2026.md
     locator: "Recommendations for researchers 3, p. 8"
     note: "Tells researchers that uploaded input may be used to train models, and not to upload sensitive work without assurances against re-use (bp10-a5). Non-binding."
-  - title: "EDPB Opinion 28/2024 on personal data in AI models (2024)"
-    ref: library/edpb-opinion-ai-models-2024.md
+  - ref: library/edpb-opinion-ai-models-2024.md
     locator: "paras 34, 114"
     note: "A model trained on personal data is not anonymous by default, and the remedy for unlawful training can reach the model itself (bp10-a5)."
-  - title: "Anthropic consumer terms update: training on chats by default (2025)"
-    ref: library/ref-anthropic-consumer-terms-2025.md
+  - ref: library/ref-anthropic-consumer-terms-2025.md
     locator: "consumer plans versus commercial terms"
     note: "Consumer accounts train on inputs by default with five-year retention; commercial terms exclude training. The account tier, not the data, decides (bp10-a5). One provider at one date."
-  - title: "Dutch DPA: AI chatbot use leads to data breaches (2024)"
-    ref: library/ref-dutch-dpa-chatbot-breaches-2024.md
+  - ref: library/ref-dutch-dpa-chatbot-breaches-2024.md
     locator: "2024 breach notifications"
     note: "A regulator states that most chatbot providers store all data entered (bp10-a5). Outside research."
-  - title: "DSK guidance: Artificial intelligence and data protection (2024)"
-    ref: library/ref-dsk-ki-datenschutz-2024.md
+  - ref: library/ref-dsk-ki-datenschutz-2024.md
     locator: "§1.9 para 24; §1.7 para 20"
     note: "German regulators prefer applications that do not train on inputs, and closed systems (bp10-a5)."
 layer: Operational

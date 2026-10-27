@@ -40,8 +40,7 @@ sources:
   - ref: library/ref-copilot-word-ai-worm-2026.md
     locator: "Security boundary and observed behavior; Impact; Closing thoughts"
     note: "Coordinated disclosure showing that a document shared through email or an internal SharePoint site can carry hidden instructions that steer the assistant, and that the assistant can copy them into its own output, which then carries the attack on (bp3-a5). Also the tradeoff argument: the model has to read the content to judge it, so a filter in front moves the exposure rather than removing it (bp3-a7). A proof of concept in a commercial productivity suite, not an incident observed in science; grounding only."
-  - title: "EDPB Opinion 28/2024 on personal data in AI models (2024)"
-    ref: library/edpb-opinion-ai-models-2024.md
+  - ref: library/edpb-opinion-ai-models-2024.md
     locator: "paras 131, 134"
     note: "A provider's self-declaration of conformity is not a conclusive finding of GDPR compliance, and a mere assertion of model anonymity is not enough (bp3-a5)."
 layer: Ecosystem

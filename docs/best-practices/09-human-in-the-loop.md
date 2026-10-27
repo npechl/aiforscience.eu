@@ -28,8 +28,7 @@ sources:
   - ref: library/ref-copilot-word-ai-worm-2026.md
     locator: "Stage 1; Disclosure status at publication"
     note: "Human review of the attached and the generated document was the only mitigation offered to customers, and both the payload (white 8-point text) and the edits it caused were too subtle for an attentive reviewer to catch until the model was made to announce its own edits, so a check that does not show what the model read and changed fails in deployment (bp9-a5). A proof of concept in a commercial productivity suite, not an incident observed in science; grounding only."
-  - title: "CNIL and CIANum: Agentic AI and personal data protection (2026)"
-    ref: library/ref-cnil-cianum-agentic-ai-2026.md
+  - ref: library/ref-cnil-cianum-agentic-ai-2026.md
     locator: "p. 14"
     note: "Human intervention required for actions whose consequences are judged critical, with the user choosing which actions need it (bp9-a1). Exploratory, non-binding."
 layer: Operational

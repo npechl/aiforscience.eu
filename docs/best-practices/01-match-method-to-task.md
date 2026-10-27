@@ -34,8 +34,7 @@ sources:
   - ref: library/expectation-realisation-gap-2026.md
     locator: "Heterogeneity as the default; controlled trials on miscalibrated, task-dependent benefit"
     note: "Review of controlled trials finding that forecast gains from agentic tools are miscalibrated and heterogeneous: constrained tasks sped up while expert high-context work was slowed, so method fit is decided per task and per user rather than by an average gain. Downweighted external context; the author is a contributor to this record."
-  - title: "Living guidelines on the responsible use of generative AI in research (European Commission and ERA Forum, 2026)"
-    ref: library/era-living-guidelines-genai-2026.md
+  - ref: library/era-living-guidelines-genai-2026.md
     locator: "Recommendations for researchers 5, p. 9"
     note: "Researchers evaluate whether and which AI tool is suited to the intended task (bp1-a1). Non-binding."
 layer: Method
