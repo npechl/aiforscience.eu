@@ -111,7 +111,7 @@ comments: true
 ## Reasons
 
 Typing data into an AI service, or letting an agent send it, hands the data to the service provider.
-What happens next is set by the account tier and the contract: whether the input trains a model, how long it is kept, and whether a court order can override a promise to delete it.
+The user's account tier and the contract determine downstream effects: whether the input can be used to train a model and how long it is kept.
 For instance, consumer accounts of one provider train on inputs by default and keep them for five years; its commercial tier excludes training and keeps them for 30 days.
 Service providers fall under their own jurisdictions: a US court ordered another provider to keep consumer and standard-API chats that users had deleted; zero-retention customers were unaffected.
 
@@ -123,10 +123,11 @@ The EDPB and the data protection authorities of Germany, France, and Spain place
 The EDPS found the European Commission's own use of a cloud office suite under the provider's standard terms unlawful until the contract was renegotiated.
 
 This practice does not restate data protection law or research ethics.
-It covers what AI changes: the decision to disclose data moves to the moment of use, where a single person makes it, or, if an agent performs the task, no one does.
+It covers what AI changes: the decision to disclose data moves to the moment of use.
+These decisions are made at institutional level (e.g., via enterprise settings), by single persons (e.g., by deciding what to work on), or even autonomously (in agentic setups).
 What happens to the data then depends on the provider's terms and jurisdiction.
 
-For an agent on an externally hosted model, sending needs no upload: every file it opens, every command output, and every tool result goes into the model's context and to the provider.
+For an agent on an externally hosted model, this applies to every file it opens, every command output, and every tool result, because they enter the model's context and thus are sent to the provider.
 Data held under withdrawable consent must also never be committed to third-party training; that irreversible case is screened under [BP10](10-screen-dual-use-high-consequence.md).
 How an agent's limits are enforced in the system, and who answers for them, is [BP04](04-govern-autonomy-and-accountability.md).
 
