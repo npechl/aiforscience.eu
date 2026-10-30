@@ -69,6 +69,7 @@ Each links to its bibliographic record.
 - [Fabricated citations from LLMs (Walters & Wilder 2023)](ref-walters-wilder-2023.md)
 - [AI tools cite retracted papers (MIT Technology Review 2025)](ref-mit-tech-review-retracted-2025.md)
 - [Code of Practice on Transparency of AI-generated Content (2026)](ref-transparency-cop-2026.md)
+- [FAIA: FAIR AI Attribution White Paper (2026)](ref-faia-2026.md)
 
 **Governance and risk frameworks**
 
