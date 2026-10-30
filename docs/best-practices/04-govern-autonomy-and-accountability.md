@@ -4,7 +4,7 @@ nav_title: "Govern agent autonomy and accountability"
 practice_id: BP-04
 status: draft
 first_added: 2026-07-25
-last_reviewed: 2026-07-26
+last_reviewed: 2026-09-16
 endorsed_by: []
 sources:
   - ref: library/hfd-agentic-ai-hochschulsystem-2026.md
@@ -76,6 +76,9 @@ comments: true
     When you run an agent in your own work, set its limits where they take effect: what it can access, how far it can act on its own, how much it may consume, and when it must stop and ask.
     Stay the decision-maker for anything that affects results or other people.
     A personal agent connected to your mail and files is part of the institution's risk, even if no one else set it up.
+    A group that runs its own server, database, or storage is also its provider.
+    Name who owns the machine, separate from whoever runs the agent.
+    Before an agent gets write or delete access to shared storage, make sure a backup exists and that the agent's account cannot reach other people's data.
 
 === "For providers"
 
@@ -112,6 +115,8 @@ This is the consensus position across the main governance frameworks (NIST, the 
 - A policy document says the agent must not delete production records, but nothing in the system stops it; a [prompt-injected](../glossary.md#prompt-injection) instruction gets it to do exactly that.
   The rule was written, not enforced.
 - The same agent runs with a scoped token that carries no delete permission and a shutdown control a named on-call engineer can trigger, so the injected instruction fails because the action was never available to it.
+- An agent with shell access on a shared lab server, running under an account that can see every group's directory, deletes another group's data while cleaning up; there is no backup, and no one owned the machine.
+  The same server, with the agent under a scoped account that cannot delete outside its own project, a snapshot taken before write access was granted, and a named owner for the server, would have contained the loss.
 - A vendor answers a document-borne injection in a drafting assistant with a detector in front of the model and a model upgrade; the reported payloads stop working, but the class still reproduces at publication, because the assistant still has to read the document in order to judge it.
   Whatever closes the class has to limit what the assistant can do with what it read, since it cannot reliably be told what to ignore (demonstrated in a commercial office suite under coordinated disclosure, not observed in science).
 - After an agent writes a wrong value to a shared dataset, the team traces it through the action ledger to the run, the model version, and the role that owned that workflow, and closes the gap.
@@ -126,6 +131,7 @@ This is the consensus position across the main governance frameworks (NIST, the 
 ## Change history
 
 - 2026-10-08: Added a Reasons cross-reference to the new [BP11](11-decide-where-research-data-may-go.md) (where research data may go). The services an agent may send data to stay a permission scope here.
+- 2026-09-16: Challenge [#28](https://github.com/slolab/aiforscience.eu/issues/28). Extended the practitioner tab to groups that run their own infrastructure (the group is also the provider; a named owner for the machine; backup and a scoped account before write or delete access to shared storage) and added a shared-lab-server Example. No new atom: the case falls under bp4-a3 and bp4-a5.
 - 2026-09-16: Added the Copilot for Word disclosure (Måløy 2026) as a supporting source on bp4-a2, with an Example: a detector model and a model upgrade closed the reported payloads but not the class, because the model has to read the content in order to judge it.
 - 2026-07-31: Extended bp4-a3 to name resource and spend caps alongside permission scopes, autonomy limits, and shutdown paths, with matching Reasons, tab, and Example text. An agent inside every permission it was granted can still exhaust a budget, because a looping agent does not crash. Prompted by the reported Amazon cost overruns, recorded in the provenance data as a qualification on bp4-a3.
 - 2026-07-27: Added the EU AI Omnibus (2026) as a supporting source on bp4-a1 (technical safeguards in the system, not policy; Art 5(1a) foreseeable-misuse standard).

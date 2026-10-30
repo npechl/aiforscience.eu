@@ -4,7 +4,7 @@ nav_title: "State human-in-the-loop requirements"
 practice_id: BP-09
 status: draft
 first_added: 2026-07-25
-last_reviewed: 2026-07-26
+last_reviewed: 2026-09-16
 endorsed_by: []
 sources:
   - ref: library/elixir-tf-agentic-ai-2026.md
@@ -91,6 +91,7 @@ Pipelines need to be assessed for realistically achievable volumes.
 The four labels used here (mandatory / optional, in-process / final check) are a useful shorthand, not settled standards.
 Agent autonomy is a spectrum from tight supervision to full autonomy.
 Stating and enforcing HITL levels fulfils part of [BP04](04-govern-autonomy-and-accountability.md) at the single use case level.
+The HITL level decides where people check or intervene in a workflow, during or after a run; whether the tool is fit for the task at all is settled by evaluation ([BP08](08-evaluate-tools-before-trust.md)), before reliance and again when the tool or the task changes.
 
 ## Examples
 
@@ -111,6 +112,7 @@ Stating and enforcing HITL levels fulfils part of [BP04](04-govern-autonomy-and-
 ## Change history
 
 - 2026-10-08: Added the CNIL and CIANum note on agentic AI (2026) as a supporting source on bp9-a1 (human validation for critical actions).
+- 2026-09-16: Challenge [#32](https://github.com/slolab/aiforscience.eu/issues/32). Reasons state the boundary with BP08 by purpose: the HITL level decides where people check or intervene, during or after a run; whether the tool is fit for the task is settled by evaluation, before reliance and again when the tool or task changes.
 - 2026-09-16: Added the Copilot for Word disclosure (Måløy 2026) as a supporting source on bp9-a5, with an Example: human review that does not show what the model read and changed missed both the hidden payload and the edits it caused.
 - 2026-07-27: Renumbered from BP08 to BP09 on inserting the new BP01 (match the method to the task).
 - 2026-07-27: Rewrote Examples as concrete scenarios (actor, action, outcome), including anti-patterns (unstated level, rubber-stamping at volume), replacing restatements of the practice.

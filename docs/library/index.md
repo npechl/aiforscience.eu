@@ -47,6 +47,7 @@ Each links to its bibliographic record.
 - [Fine-tuned small LLMs beat zero-shot frontier models (Bucher & Martini 2024)](ref-bucher-fine-tuned-2024.md)
 - [Leakage and the reproducibility crisis in ML-based science (Kapoor & Narayanan 2023)](ref-kapoor-narayanan-leakage-2023.md)
 - [Unmetered agent spend at Amazon (2026)](ref-amazon-ai-cost-overruns-2026.md)
+- [How Is ChatGPT's Behavior Changing Over Time? (Chen, Zaharia & Zou 2024)](ref-chen-chatgpt-drift-2023.md)
 
 **Data and metadata standards**
 
@@ -68,6 +69,7 @@ Each links to its bibliographic record.
 - [Fabricated citations from LLMs (Walters & Wilder 2023)](ref-walters-wilder-2023.md)
 - [AI tools cite retracted papers (MIT Technology Review 2025)](ref-mit-tech-review-retracted-2025.md)
 - [Code of Practice on Transparency of AI-generated Content (2026)](ref-transparency-cop-2026.md)
+- [FAIA: FAIR AI Attribution White Paper (2026)](ref-faia-2026.md)
 
 **Governance and risk frameworks**
 
@@ -110,6 +112,7 @@ Each links to its bibliographic record.
 - [NeurIPS Paper Checklist](ref-neurips-checklist.md)
 - [DOME recommendations for ML validation in biology (2021)](ref-dome-2021.md)
 - [Open and Sustainable AI in the life sciences (OSAI, 2025)](ref-osai-2025.md)
+- [LLM Evaluators Recognize and Favor Their Own Generations (Panickssery et al. 2024)](ref-panickssery-self-preference-2024.md)
 
 **Dual-use and frontier safety**
 

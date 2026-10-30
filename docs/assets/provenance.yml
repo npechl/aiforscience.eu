@@ -64,6 +64,10 @@ bp1-a2:  # for well-defined work, a deterministic or specialized method often fi
     stance: supports
     locator: "frontier model used for bulk author-record matching; about $1.8m, never shipped"
     quote: "catastrophically expensive"
+  - ref: chen-chatgpt-drift-2023
+    stance: supports
+    locator: "Abstract; GPT-4 March vs June 2023"
+    quote: "the behavior of the \"same\" LLM service can change substantially in a relatively short amount of time, highlighting the need for continuous monitoring of LLMs"
 bp1-a3:  # agentic autonomy earns its cost only when flexibility at scale is needed
   - ref: anthropic-building-effective-agents-2024
     stance: supports
@@ -147,7 +151,7 @@ bp2-a7:  # sort resources into types to prioritise effort
     locator: "registry for the long tail"
 
 # ------------------------------------------------------------------ BP03
-bp3-a2:  # each interface runs code; a point where risk enters
+bp3-a2:  # each interface runs code or supplies instructions; a point where risk enters
   - ref: owasp-llm-top10-2025
     stance: supports
     locator: "LLM01 prompt injection"
@@ -412,6 +416,10 @@ bp7-a2:  # clear what a human did and what an agent did
     stance: supports
     locator: "Implications; Impact"
     quote: "Independently of prompt-injection prevention, generated documents should preserve provenance for source material and model-performed edits in metadata."
+  - ref: faia-2026
+    stance: supports
+    locator: "attribution flags human-created / AI-assisted / AI-generated; activity codes; system attribution"
+    quote: "FAIA provides a vocabulary and technical framework for machine-readable, persistent, and verifiable disclosure of AI involvement"
   - ref: eu-ai-act
     stance: supports
     locator: "Art 50(2) and 50(4), in application 2 August 2026"
@@ -423,6 +431,18 @@ bp7-a2:  # clear what a human did and what an agent did
   - ref: transparency-cop-2026
     stance: supports
     locator: "Section 1, Sub-measures 1.1.1 and 1.1.2: signed, time-stamped metadata plus an imperceptible watermark"
+
+bp7-a3:  # sources cited with a persistent identifier where one exists
+  - ref: fair-2016
+    stance: supports
+    locator: "F1"
+    quote: "(meta)data are assigned a globally unique and persistent identifier"
+  - ref: walters-wilder-2023
+    stance: supports
+    locator: "fabricated and erroneous bibliographic citations; an identifier is what would have resolved or failed them"
+  - ref: crossref-retraction-watch-2023
+    stance: supports
+    locator: "retraction data keyed by DOI"
 
 # ------------------------------------------------------------------ BP08
 bp8-a1:  # run task-specific benchmarks before granting autonomy
@@ -458,6 +478,15 @@ bp8-a3:  # no good general proxy for correctness in individual use
     stance: supports
     locator: "§6.2, pg. 20"
     quote: "Benchmarked tools on operational outcomes, not model benchmarks"
+
+bp8-a6:  # a model does not judge its own outputs independently, nor does a same-family model; some human judgement, in proportion to the stakes
+  - ref: panickssery-self-preference-2024
+    stance: supports
+    locator: "Abstract"
+    quote: "a linear correlation between self-recognition capability and the strength of self-preference bias"
+  - ref: fai2r-verifiable-ai-provenance-2026
+    stance: supports
+    locator: "single-witness weakness: the authoring agent granted its own top verification status; independent-model or sampled-human re-verification flagged as needed"
 
 # ------------------------------------------------------------------ BP09
 bp9-a1:  # state the HITL level for each use case
