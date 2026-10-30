@@ -51,6 +51,10 @@ sources:
     ref: library/ref-copilot-word-ai-worm-2026.md
     locator: "Implications; Impact"
     note: "Recommends that generated documents preserve provenance for source material and model-performed edits in metadata; in the proof of concept, approved assistant edits left no visible trace, which is what made the manipulation untraceable afterwards (bp7-a2). A proof of concept in a commercial productivity suite, not an incident observed in science; grounding only."
+  - title: "Living guidelines on the responsible use of generative AI in research (European Commission and ERA Forum, 2026)"
+    ref: library/era-living-guidelines-genai-2026.md
+    locator: "Recommendations for researchers 1 and 2, pp. 7-8"
+    note: "Researchers stay accountable for AI-assisted content, AI is not an author, and substantial use is noted in the methods section (bp7-a2). Non-binding."
   - title: "FAIA: FAIR AI Attribution White Paper (2026)"
     ref: library/ref-faia-2026.md
     locator: "attribution flags, activity codes, system attribution; ISCC-bound JSON-LD declarations"
@@ -128,6 +132,7 @@ A research agent has to pass citation and retraction status through to its outpu
 
 ## Change history
 
+- 2026-10-08: Added the Commission's living guidelines on generative AI in research (2026) as a supporting source on bp7-a2 (AI is not an author; substantial use disclosed).
 - 2026-09-16: Challenge [#31](https://github.com/slolab/aiforscience.eu/issues/31). Retitled from "Make provenance and citation first-class" to "Make every agent answer traceable and citable"; page slug unchanged. Added bp7-a3: sources are cited with a persistent identifier where one exists, so a reference resolves and can be checked by machine, grounded in FAIR F1 with the fabricated-citation and DOI-keyed retraction evidence. Tabs, Reasons, and Examples add the mechanism: confirm the source exists, then generate the reference from its identifier rather than letting the model write it. Added the FAIA white paper (2026) as an emerging machine-readable attribution vocabulary on bp7-a2.
 - 2026-09-16: Added the Copilot for Word disclosure (Måløy 2026) as a supporting source on bp7-a2, with an Example: assistant edits accepted without a record of what changed or which attachment drove them cannot be traced afterwards.
 - 2026-08-03: Added the F(AI)2R provenance paper (Krebs 2026) as a supporting source on claim-level provenance and per-activity human and agent attribution, downweighted as a single self-audited demonstration (bp7-a1, bp7-a2).
