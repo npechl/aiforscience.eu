@@ -62,7 +62,7 @@ comments: true
   { #bp2-a6 }
 - Sorting resources into types based on usage and importance can help prioritise maintenance effort.
   { #bp2-a7 }
-- This practice decides which resources get a maintained interface and how much to invest; what any interface, documentation, and metadata must contain is [BP05](05-documentation-and-data-for-agents.md).
+- This practice decides which resources get a maintained interface and how much to invest; what any interface, documentation, and metadata must contain is covered in [BP05](05-documentation-and-data-for-agents.md).
   { #bp2-a8 }
 
 </div>
