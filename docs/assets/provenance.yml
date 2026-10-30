@@ -459,7 +459,7 @@ bp8-a3:  # no good general proxy for correctness in individual use
     locator: "§6.2, pg. 20"
     quote: "Benchmarked tools on operational outcomes, not model benchmarks"
 
-bp8-a6:  # a same-family model judge is not independent; some human judgement, in proportion to the stakes
+bp8-a6:  # a model does not judge its own outputs independently, nor does a same-family model; some human judgement, in proportion to the stakes
   - ref: panickssery-self-preference-2024
     stance: supports
     locator: "Abstract"

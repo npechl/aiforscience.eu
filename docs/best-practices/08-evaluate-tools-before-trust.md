@@ -50,11 +50,13 @@ comments: true
   { #bp8-a2 }
 - For LLM-driven systems, there is no good general proxy (e.g., leaderboards) for their correctness in individual applications.
   { #bp8-a3 }
-- Benchmarking is separate from safety ([BP03](03-register-and-vet-interfaces.md)), auditability ([BP07](07-provenance-and-citation.md)), and oversight during operation ([BP09](09-human-in-the-loop.md)): it happens before reliance and asks whether the tool works at all.
+- Benchmarking is separate from safety ([BP03](03-register-and-vet-interfaces.md)), auditability ([BP07](07-provenance-and-citation.md)), and human oversight ([BP09](09-human-in-the-loop.md)): it asks whether the tool is fit for the task.
   { .afs-practice__pivot #bp8-a4 }
-- It is the adopter measuring a tool's performance on representative tasks, against a reference the tool did not produce, and recording how it fails.
+- Benchmarking should be performed before introducing and relying on a solution, and again when the tool or the task changes.
+  { #bp8-a7 }
+- It is the adopter measuring a tool's performance on representative tasks against an independent reference, and recording how it fails.
   { #bp8-a5 }
-- A model from the same family as the system under test is not an independent judge; some human judgement is part of the evidence, in proportion to the stakes.
+- A model is not an independent judge of its own outputs, and a model from the same family shares its failure modes; some human judgement is part of the evidence, in proportion to the stakes.
   { #bp8-a6 }
 
 </div>
@@ -63,7 +65,7 @@ comments: true
 
     A tool being available, popular, or well-described is not evidence that it is correct for your task.
     Before you rely on its output, run it on cases where you know the answer, check it across repeated runs, and note where it breaks.
-    Do not let a model from the same family grade the results for you; where a model does act as judge, check a sample of its verdicts yourself.
+    Do not let a model from the same family grade the results for you; where a model does act as judge, check a sample of its verdicts yourself, against reference answers and criteria fixed before you see the results.
     Keep that evidence; it is what justifies trusting the result.
 
 === "For providers"
@@ -84,14 +86,19 @@ comments: true
 Whether a tool is safe to connect and whether it is correct are different questions, answered by different people.
 Registration and vetting ([BP03](03-register-and-vet-interfaces.md)) concern security at connect time; provenance and auditability ([BP07](07-provenance-and-citation.md)) concern the ability to trace answers after execution.
 Evaluation (this practice) concerns accuracy and reliability at use time.
-Oversight during operation ([BP09](09-human-in-the-loop.md)) concerns who checks each output while the agent runs; evaluation settles beforehand whether the tool should be trusted at all.
+Human oversight ([BP09](09-human-in-the-loop.md)) decides where people check or intervene in a workflow, during or after a run; evaluation decides whether the tool is fit for the task at all, before reliance and again when the tool or the task changes.
 Goodhart's law states that a metric that becomes the target ceases to be a good metric; LLM leaderboards today decide on highest-volume investments for frontier AI companies.
 Evaluation is the task of users, adopters, and community; only they know the task *and* possess the necessary stakes and incentives to desire an objective evaluation.
 The evidence is clear that this cannot be skipped: a single benchmark score does not predict deployment reliability, agents vary run to run, and [confabulation](../glossary.md#confabulation) is common.
 A tool that looks capable in a demo can be wrong in ways that only representative testing reveals.
 The measuring instrument matters too.
-A language model asked to judge outputs favours its own generations, and a judge from the same family as the system under test shares its failure modes, so a same-family judge is not independent evidence; the [failures log](failures.md) records an agent granting its own top verification status.
-Some human judgement, in proportion to the stakes, is what makes the evaluation independent of the thing evaluated.
+A language model asked to judge outputs favours its own generations; this self-preference has been measured.
+Models from the same family share training data and failure modes, so this practice also treats a same-family judge as not independent.
+That step is a precaution: the study tested models judging their own outputs, not their relatives'.
+The [failures log](failures.md) records an agent granting its own top verification status.
+Some human judgement, in proportion to the stakes, belongs in the evidence.
+It makes the evaluation independent only when it uses reference answers and criteria fixed before the results are seen.
+A person reviewing outputs without either tends to accept plausible output (automation bias, see [BP09](09-human-in-the-loop.md)).
 
 ## Examples
 
@@ -108,7 +115,7 @@ Some human judgement, in proportion to the stakes, is what makes the evaluation 
 
 ## Change history
 
-- 2026-09-16: Challenge [#32](https://github.com/slolab/aiforscience.eu/issues/32). bp8-a5 now measures against a reference the tool did not produce; new bp8-a6 says a same-family model judge is not independent and that some human judgement is part of the evidence, in proportion to the stakes, grounded in Panickssery, Bowman & Feng (2024) and the single-witness entry in the failures log. bp8-a4 and Reasons add the boundary with BP09 (oversight during operation versus evaluation before reliance). Tabs and Examples extended to match.
+- 2026-09-16: Challenge [#32](https://github.com/slolab/aiforscience.eu/issues/32). bp8-a5 now measures against an independent reference; new bp8-a6 says a same-family model judge is not independent and that some human judgement is part of the evidence, in proportion to the stakes, grounded in Panickssery, Bowman & Feng (2024) and the single-witness entry in the failures log. bp8-a4 and Reasons add the boundary with BP09 by purpose, and new bp8-a7 states when to benchmark: BP08 decides whether a tool is fit for the task, before reliance and again when the tool or task changes; BP09 decides where people check or intervene. Reasons separate the measured finding (a model favours its own outputs) from the precaution drawn from it (same-family judges), and say a human check is independent only against reference answers and criteria fixed in advance. Tabs and Examples extended to match.
 - 2026-07-27: Added the EU AI Omnibus (2026) as a qualifying source on bp8-a2 (conditional legal basis for special-category data in bias detection; Art 4a).
 - 2026-07-27: Added The GenAI Divide (MIT NANDA 2025) as a supporting source on outcome-based evaluation over benchmark scores (bp8-a3).
 - 2026-07-27: Renumbered from BP07 to BP08 on inserting the new BP01 (match the method to the task).
