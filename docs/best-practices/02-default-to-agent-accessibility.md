@@ -50,7 +50,7 @@ comments: true
 
 - [Agents](../glossary.md#agent) use resources like humans do: databases, public endpoints, code, tools, and documents.
   { #bp2-a1 }
-- Often, programmatic use by agents cannot be distinguished from human use, so a limit inferred from the client does not work.
+- Often, programmatic use by agents cannot be distinguished from human use, so access or rate limits based on guessing who the client is do not work.
   { #bp2-a2 }
 - Resources should be [machine-actionable](../glossary.md#machine-actionable) and discoverable by default.
   { #bp2-a3 }
@@ -121,7 +121,7 @@ The load that automated clients now place on open resources makes governed acces
 ## Change history
 
 - 2026-10-08: Added the Commission's living guidelines on generative AI in research (2026) and the European Health Data Space Regulation as supporting sources on bp2-a4 (self-governed hosting; secure processing environment).
-- 2026-09-16: Challenge [#26](https://github.com/slolab/aiforscience.eu/issues/26). Retitled from "Default to agent-accessibility" to "Make resources agent-accessible by default", so the title states an action while keeping the default stance; page slug unchanged. bp2-a2 now states its consequence (a limit inferred from the client does not work) instead of leaving it to the last Example.
+- 2026-09-16: Challenge [#26](https://github.com/slolab/aiforscience.eu/issues/26). Retitled from "Default to agent-accessibility" to "Make resources agent-accessible by default", so the title states an action while keeping the default stance; page slug unchanged. bp2-a2 now states its consequence (access or rate limits based on guessing who the client is do not work) instead of leaving it to the last Example.
 - 2026-07-27: Renumbered from BP01 to BP02 on inserting the new BP01 (match the method to the task).
 - 2026-07-27: Rewrote Examples as concrete scenarios (actor, action, outcome), including anti-patterns, replacing restatements of the practice; kept the labelled life-science instances (Core Data Resources, bio.tools).
 - 2026-07-26: Rewritten to be domain-neutral (FAIR as the general anchor; ELIXIR and bio.tools demoted to labelled examples) and to replace "open to agents" with machine-actionable, discoverable, and governed-per-tier, grounded in FAIR and the COAR load survey.
