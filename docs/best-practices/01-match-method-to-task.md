@@ -101,7 +101,8 @@ comments: true
 An agent is a general instrument, and general instruments are rarely the most efficient way to do a fixed job.
 Vendor engineering guidance is explicit: start with the simplest approach, and add agentic complexity only when a task needs flexible, model-driven decisions at scale.
 Agents trade latency and cost for that flexibility.
-A hosted frontier model is also a dependency the adopter does not control: the provider can retire or change the version, and a workflow validated on the old one has to be revalidated with no way to reproduce the original run.
+A hosted frontier model is also a dependency the adopter does not control: the provider can retire or change the version, and its behaviour can shift even under the same version name (model drift).
+A workflow validated on the old behaviour then has to be revalidated, with no way to reproduce the original run.
 When real cost is measured, complex agents often fail to beat simple baselines.
 On well-specified tasks, a specialized or fine-tuned model can be more accurate than a larger general model, at a fraction of the cost.
 The reverse choice has a record of concrete harm in science: a frontier model asked to supply references fabricates a large share of them, and treating a model as a scientific instrument without method rigour produces over-optimistic results that do not reproduce.
@@ -127,7 +128,7 @@ Controlled trials show forecast gains from agentic tools are frequently miscalib
 ## Change history
 
 - 2026-10-08: Added the Commission's living guidelines on generative AI in research (2026) as a supporting source on bp1-a1 (evaluate whether and which tool suits the task).
-- 2026-09-16: Challenge [#25](https://github.com/slolab/aiforscience.eu/issues/25). Added "explainable" to bp1-a2, and a Reasons line that a hosted frontier model is a dependency the adopter does not control, so a provider's version change can force revalidation. Grounded in Chen, Zaharia & Zou (2024) on measured behaviour drift of a hosted model; provenance edge on bp1-a2.
+- 2026-09-16: Challenge [#25](https://github.com/slolab/aiforscience.eu/issues/25). Added "explainable" to bp1-a2, and a Reasons line that a hosted frontier model is a dependency the adopter does not control, so a provider's version change or model drift under the same version name can force revalidation. Grounded in Chen, Zaharia & Zou (2024) on measured behaviour drift of a hosted model; provenance edge on bp1-a2.
 - 2026-07-31: Added a costed Example from the reported Amazon cost overruns (bulk record matching through a frontier model, about $1.8m, 860% over budget, never shipped), labelled as an out-of-domain corporate case. Provenance edges added on bp1-a2 and bp1-a3.
 - 2026-07-27: Added the Expectation–Realisation Gap review (Lobentanzer 2026) as downweighted context on heterogeneous, miscalibrated benefit, with a Reasons and Examples note that method choice includes stating and re-measuring expected net benefit with oversight cost deducted (bp1-a1, bp1-a3).
 - 2026-07-27: Added The GenAI Divide (MIT NANDA 2025) as a supporting source on task-based method fit (bp1-a1).
