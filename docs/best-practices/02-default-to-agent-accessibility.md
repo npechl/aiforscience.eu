@@ -62,6 +62,8 @@ comments: true
   { #bp2-a6 }
 - Sorting resources into types based on usage and importance can help prioritise maintenance effort.
   { #bp2-a7 }
+- This practice decides which resources get a maintained interface and how much to invest; what any interface, documentation, and metadata must contain is covered in [BP05](05-documentation-and-data-for-agents.md).
+  { #bp2-a8 }
 
 </div>
 
@@ -121,6 +123,7 @@ The load that automated clients now place on open resources makes governed acces
 ## Change history
 
 - 2026-10-08: Added the Commission's living guidelines on generative AI in research (2026) and the European Health Data Space Regulation as supporting sources on bp2-a4 (self-governed hosting; secure processing environment).
+- 2026-09-16: Challenge [#29](https://github.com/slolab/aiforscience.eu/issues/29). Added bp2-a8 stating the boundary with BP05: this practice decides which resources get a maintained interface and how much to invest; BP05 says what any interface, documentation, and metadata must contain.
 - 2026-09-16: Challenge [#26](https://github.com/slolab/aiforscience.eu/issues/26). Retitled from "Default to agent-accessibility" to "Make resources agent-accessible by default", so the title states an action while keeping the default stance; page slug unchanged. bp2-a2 now states its consequence (access or rate limits based on guessing who the client is do not work) instead of leaving it to the last Example.
 - 2026-07-27: Renumbered from BP01 to BP02 on inserting the new BP01 (match the method to the task).
 - 2026-07-27: Rewrote Examples as concrete scenarios (actor, action, outcome), including anti-patterns, replacing restatements of the practice; kept the labelled life-science instances (Core Data Resources, bio.tools).
