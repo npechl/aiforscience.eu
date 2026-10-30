@@ -1,20 +1,20 @@
 ---
-title: "How Is ChatGPT's Behavior Changing Over Time? (Chen, Zaharia & Zou 2023)"
+title: "How Is ChatGPT's Behavior Changing Over Time? (Chen, Zaharia & Zou 2024)"
 ref_id: chen-chatgpt-drift-2023
 source_type: paper
-issuing_body: "Chen, Zaharia & Zou, arXiv preprint"
-published: 2023
-doi_or_url: https://arxiv.org/abs/2307.09009
+issuing_body: "Chen, Zaharia & Zou; Harvard Data Science Review"
+published: 2024
+doi_or_url: https://doi.org/10.1162/99608f92.5317da47
 added_on: 2026-09-16
 grounds: [BP-01]
 tags: [library, reference]
 comments: true
 ---
 
-# How Is ChatGPT's Behavior Changing Over Time? (Chen, Zaharia & Zou 2023)
+# How Is ChatGPT's Behavior Changing Over Time? (Chen, Zaharia & Zou 2024)
 
 !!! info "Reference"
-    **Citation:** Chen, L., Zaharia, M. and Zou, J. "How Is ChatGPT's Behavior Changing Over Time?" arXiv:2307.09009 (2023). **Type:** paper (preprint). **Link:** [arXiv:2307.09009](https://arxiv.org/abs/2307.09009).
+    **Citation:** Chen, L., Zaharia, M. and Zou, J. "How Is ChatGPT's Behavior Changing Over Time?" *Harvard Data Science Review* 6(2) (2024). **Type:** paper. **Link:** [doi.org/10.1162/99608f92.5317da47](https://doi.org/10.1162/99608f92.5317da47); open-access preprint [arXiv:2307.09009](https://arxiv.org/abs/2307.09009) (2023).
 
 ## What it is
 

@@ -27,7 +27,7 @@ sources:
     ref: library/ref-walters-wilder-2023.md
     locator: "55% (GPT-3.5) / 18% (GPT-4) of citations fabricated"
     note: "A concrete failure mode of using a frontier model where a retrieval method fits."
-  - title: "Chen, Zaharia & Zou, How Is ChatGPT's Behavior Changing Over Time? (2023)"
+  - title: "Chen, Zaharia & Zou, How Is ChatGPT's Behavior Changing Over Time? (2024)"
     ref: library/ref-chen-chatgpt-drift-2023.md
     locator: "GPT-4 prime-number accuracy 84% (March 2023) to 51% (June 2023) under the same service name"
     note: "Measured the same hosted model service changing behaviour within months, so a hosted frontier model is a dependency the adopter does not control and a validated workflow can need revalidation."
@@ -47,6 +47,10 @@ sources:
     ref: library/expectation-realisation-gap-2026.md
     locator: "Heterogeneity as the default; controlled trials on miscalibrated, task-dependent benefit"
     note: "Review of controlled trials finding that forecast gains from agentic tools are miscalibrated and heterogeneous: constrained tasks sped up while expert high-context work was slowed, so method fit is decided per task and per user rather than by an average gain. Downweighted external context; the author is a contributor to this record."
+  - title: "Living guidelines on the responsible use of generative AI in research (European Commission and ERA Forum, 2026)"
+    ref: library/era-living-guidelines-genai-2026.md
+    locator: "Recommendations for researchers 5, p. 9"
+    note: "Researchers evaluate whether and which AI tool is suited to the intended task (bp1-a1). Non-binding."
 layer: Method
 hitl: n/a
 tags: [practitioner, provider, draft]
@@ -122,7 +126,8 @@ Controlled trials show forecast gains from agentic tools are frequently miscalib
 
 ## Change history
 
-- 2026-09-16: Challenge [#25](https://github.com/slolab/aiforscience.eu/issues/25). Added "inspectable" to bp1-a2, and a Reasons line that a hosted frontier model is a dependency the adopter does not control, so a provider's version change can force revalidation. Grounded in Chen, Zaharia & Zou (2023) on measured behaviour drift of a hosted model; provenance edge on bp1-a2.
+- 2026-10-08: Added the Commission's living guidelines on generative AI in research (2026) as a supporting source on bp1-a1 (evaluate whether and which tool suits the task).
+- 2026-09-16: Challenge [#25](https://github.com/slolab/aiforscience.eu/issues/25). Added "inspectable" to bp1-a2, and a Reasons line that a hosted frontier model is a dependency the adopter does not control, so a provider's version change can force revalidation. Grounded in Chen, Zaharia & Zou (2024) on measured behaviour drift of a hosted model; provenance edge on bp1-a2.
 - 2026-07-31: Added a costed Example from the reported Amazon cost overruns (bulk record matching through a frontier model, about $1.8m, 860% over budget, never shipped), labelled as an out-of-domain corporate case. Provenance edges added on bp1-a2 and bp1-a3.
 - 2026-07-27: Added the Expectation–Realisation Gap review (Lobentanzer 2026) as downweighted context on heterogeneous, miscalibrated benefit, with a Reasons and Examples note that method choice includes stating and re-measuring expected net benefit with oversight cost deducted (bp1-a1, bp1-a3).
 - 2026-07-27: Added The GenAI Divide (MIT NANDA 2025) as a supporting source on task-based method fit (bp1-a1).
